@@ -59,10 +59,10 @@ public class Tema5 : MonoBehaviour
 
 
 
-        else
-        {
+        
+   
             Debug.Log("La compra final sería de $" + precioFinalSinDescuento + " , pero si le restamos el descuento que sería de $" + Descuento + " y el total de la compra con descuento quedaría en $" + (precioFinalSinDescuento - Descuento));
-        }
+        
 
     }
 
