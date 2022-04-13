@@ -33,7 +33,7 @@ public class Tema5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Descuento = (precio1 - precioConDescuento1) + (precio2 - precioConDescuento2) + (precio3 - precioConDescuento3);
+        Descuento = precioConDescuento1 + precioConDescuento2 + precioConDescuento3;
         float precioFinalSinDescuento = (precio1 * cantidad1) + (precio2 * cantidad2) + (precio3 * cantidad3);
 
         if (cantidad1 < 1 || cantidad2 < 1 || cantidad3 < 1 || precio1 < 1 || precio2 < 1 || precio3 < 1)
