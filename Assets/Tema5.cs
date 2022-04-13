@@ -46,22 +46,22 @@ public class Tema5 : MonoBehaviour
             precioConDescuento1 = precio1 * 0.80f;
         }
 
-        else if (cantidad2 > 3)
+        if (cantidad2 > 3)
         {
-            precioConDescuento2 = precio2 * 0.80f;
+            precioConDescuento2 = precio2  * 0.80f;
         }
 
-        else if (cantidad3 > 3)
+        if (cantidad3 > 3)
         {
             precioConDescuento3 = precio3 * 0.80f;
         }
 
-        
-        
 
-   else{
-            Debug.Log("La compra final sería de $" + precioFinalSinDescuento + " , pero si le restamos el descuento que sería de $" + Descuento + " y el total de la compra con descuento quedaría en $" + (precioFinalSinDescuento - Descuento));
-        }
+       
+
+   
+          Debug.Log("La compra final sería de $" + precioFinalSinDescuento + " , pero si le restamos el descuento que sería de $" + Descuento + " y el total de la compra con descuento quedaría en $" + (precioFinalSinDescuento - Descuento));
+        
 
     }
 
