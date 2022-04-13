@@ -33,7 +33,7 @@ public class Tema5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Descuento = precioConDescuento1 + precioConDescuento2 + precioConDescuento3;
+        
         float precioFinalSinDescuento = (precio1 * cantidad1) + (precio2 * cantidad2) + (precio3 * cantidad3);
 
         if (cantidad1 < 1 || cantidad2 < 1 || cantidad3 < 1 || precio1 < 1 || precio2 < 1 || precio3 < 1)
@@ -57,11 +57,11 @@ public class Tema5 : MonoBehaviour
         }
 
 
+        Descuento = precioConDescuento1 + precioConDescuento2 + precioConDescuento3;
 
 
-        
-   
-            Debug.Log("La compra final sería de $" + precioFinalSinDescuento + " , pero si le restamos el descuento que sería de $" + Descuento + " y el total de la compra con descuento quedaría en $" + (precioFinalSinDescuento - Descuento));
+
+        Debug.Log("La compra final sería de $" + precioFinalSinDescuento + " , pero si le restamos el descuento que sería de $" + Descuento + " y el total de la compra con descuento quedaría en $" + (precioFinalSinDescuento - Descuento));
         
 
     }
